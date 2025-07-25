@@ -1,0 +1,206 @@
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --exp-color:#9a43b2e6;
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.inner_background{
+     display:flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.header{
+     display:flex;
+     flex-direction: row;
+     padding:1rem;
+}
+.book-icon{
+   margin-right:22rem;
+   width:1rem;
+   
+}
+.serif{
+    width:1rem;
+}
+.arrowDown-icon{
+    margin-left:2rem;
+
+}
+.moon-icon{
+    margin-left:0.5rem;
+    width:1rem;
+}
+.verticalLine{
+ border-left: 0.1rem solid rgb(180, 178, 178);/*aatul ha la syntaxe verttical line, check w3Schools*/
+ margin-left:0.5rem;
+ margin-right:2rem;
+}
+ .toggle-switch {
+      position: relative;
+      display: inline-block;
+      width: 2.4rem;
+      height: 1.2rem;
+    }
+
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      background-color: #777;
+      border-radius: 2rem;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: 0.3s;
+    }
+
+    .slider::before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .toggle-switch input:checked + .slider::before {/*if toggled is on, target the slider*/
+      transform: translateX(20px); /*moves it to the right*/
+    }
+
+/*----------------------------------------------------SEARCH BAR---------------------------------*/
+.search_Bar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center; 
+  background-color: rgb(241, 238, 238);
+  padding: 1rem;
+  margin-top:2rem;
+  border-radius:0.5rem;
+  width:30rem;         
+  height:2.2rem; 
+}
+
+.input { 
+  background: transparent;
+  border: none;
+  color:black;
+  font-size: 0.8rem;
+  width: 100%;
+  outline: none;
+}
+.search-icon {
+  width: 0.8rem;
+  cursor: pointer;
+}
+
+/*-------------------------------------------------------KEYBOARD----------------*/
+.keyboard_container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding:2rem;
+  gap:19.3rem;
+}
+
+.play-icon{
+    width:3rem;
+}
+
+.keyboard_spelling{
+    color:var(--exp-color);
+}
+
+/*----------------------------------------------NOUN--------------------------*/
+
+.noun_container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding:2rem;
+}
+
+.line{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom:2rem;
+}
+.horizontal_line{
+    border-top: 1px solid rgb(237, 234, 234);
+    width:30rem;
+}
+.meaning{
+    font-size:1rem ;
+    margin-bottom:0.5rem;
+   
+     
+}
+
+
+ul {
+  width: 30rem;        /* match other elements */
+  margin: 0 auto;      /* center it */
+  padding-left: 0;     /* remove default padding if needed */
+}
+
+ul li {
+  width: 100%;         /* or less, like 90% */
+  margin: 0.5rem 0;
+}
+
+
+ul li::marker {
+  color: var(--exp-color); /*marker changes the dots' color*/
+}
+
+
+
+
+
+.synonym_container{
+  display: flex;
+  flex-direction: row;
+  margin-top:1.5rem;
+  align-items: center;
+}
+.synonym{
+    margin-left:2rem;
+    color: var( --exp-color);
+}
+
+/*---------------------------------VERB----------------------------*/
+.verb_container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding:2rem;
+}
+
+
+.example{
+  margin-top:1rem;
+  margin-left:1rem;
+ 
+}
+
