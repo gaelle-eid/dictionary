@@ -204,3 +204,63 @@ ul li::marker {
  
 }
 
+/*-----------------------------------------RESPONSIVE----------------------------------------*/
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .header {
+    flex-wrap: wrap; 
+    gap: 1rem;
+  }
+
+  .book-icon {
+    margin-right: auto; 
+  }
+
+  .search_Bar,
+  ul,
+  .horizontal_line {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .keyboard_container {
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .line {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .noun_container,
+  .verb_container {
+    padding: 1rem;
+  }
+
+  .toggle-switch {
+    width: 2.2rem;
+    height: 1.1rem;
+  }
+
+  .slider::before {
+    height: 14px;
+    width: 14px;
+  }
+.noun_container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto; 
+  margin-right:2rem;
+}
+  .toggle-switch input:checked + .slider::before {
+    transform: translateX(1.1rem);
+  }
+}
